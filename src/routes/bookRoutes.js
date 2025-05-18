@@ -34,9 +34,7 @@ router.post("/", protectRoute, async(req,res)=>{
     }
 })
 
-//const response = await fetch("htttp://localhost:3000/api/books?page=1&limit=5");
 
-//pagination => infinite loading
 router.get("/", protectRoute, async(req,res)=>{
     try {
         const page = req.query.page || 1;
